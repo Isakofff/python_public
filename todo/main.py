@@ -4,9 +4,6 @@
 Main file. Contains program execution logic.
 """
 
-from __future__ import print_function
-
-
 from commands import (
     ListCommand,
     NewCommand,

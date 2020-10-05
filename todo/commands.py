@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import print_function
 from custom_exceptions import UserExitException
 from utils import get_input_function
 
