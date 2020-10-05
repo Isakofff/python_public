@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+__author__ = "Isakov Anton"
 
 from utils import get_input_function
 

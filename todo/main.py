@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+__author__ = "Isakov Anton"
 
 """
 Main file. Contains program execution logic.
@@ -15,9 +16,6 @@ from commands import (
 from models import (
     Storage,
 )
-
-__author__ = 'sobolevn'
-
 
 def get_routes():
     """
