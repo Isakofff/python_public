@@ -101,11 +101,8 @@ class DoneCommand(BaseCommand):
         # iterate all the objects in storage
         # for obj in objects:
         #     print(obj, obj.done)
-        if len(objects) == 0:
-            print('There are no items in storage.')
-            return
-        for index, obj in enumerate(objects):
-            print(f'{index}: {str(obj)}')
+
+        ListCommand().perform(objects)
 
         try:
             index = int(input('Input object index: '))
