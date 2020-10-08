@@ -97,7 +97,7 @@ class DoneCommand(BaseCommand):
         # check arguments
         # print(self, objects, args, kwargs)
         # check the lenght - it will be more and more after each 'new'
-        #print(self, len(objects))
+        # print(self, len(objects))
         # iterate all the objects in storage
         # for obj in objects:
         #     print(obj, obj.done)
@@ -112,11 +112,10 @@ class DoneCommand(BaseCommand):
         except ValueError:
             print('Input number!')
 
+
 class UnDoneCommand(DoneCommand):
     state = False
 
     @staticmethod
     def label():
         return 'undone'
-
-

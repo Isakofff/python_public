@@ -17,6 +17,7 @@ from models import (
     Storage,
 )
 
+
 def get_routes():
     """
     This function contains the dictionary of possible commands.

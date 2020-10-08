@@ -48,7 +48,8 @@ class ToBuyItem(BaseItem):
         self.price = price
 
     def __str__(self):
-        return f"{'+' if self.done else '-'} ToBuy: {self.heading} for {self.price}"
+        return f"{'+' if self.done else '-'} ToBuy: {self.heading} " \
+               f"for {self.price}"
 
     @classmethod
     def construct(cls):
@@ -57,13 +58,15 @@ class ToBuyItem(BaseItem):
         price = input_function('Input price: ')
         return ToBuyItem(heading, price)
 
+
 class ToReadItem(BaseItem):
     def __init__(self, heading, url):
         super(ToReadItem, self).__init__(heading)
         self.url = url
 
     def __str__(self):
-        return f"{'+' if self.done else '-'} ToRead: {self.heading} for {self.url}"
+        return f"{'+' if self.done else '-'} ToRead: {self.heading} " \
+               f"for {self.url}"
 
     @classmethod
     def construct(cls):
